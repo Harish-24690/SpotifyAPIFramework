@@ -12,7 +12,7 @@ public class SpecBuilder {
 	public static RequestSpecification getrequestSpecBuilder() {
 		
      return new RequestSpecBuilder()
-		.setBaseUri(System.getProperty("BASE_URI"))   //System.getProperty("BaseURI	")    //"https://api.spotify.com/""
+		.setBaseUri(System.getProperty("BASE_URI"))   //System.getProperty("BaseURI	")    //"https://api.spotify.com/"
 		.setBasePath(Route.BASEPATH)                      // Basepath coming form Route;
 		.setContentType(ContentType.JSON)
 				.log(LogDetail.ALL).build();
